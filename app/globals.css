@@ -27,9 +27,14 @@ select{
   color: black;
   background-color: white;
 }
+
 input{
   outline: none;
   background-color: transparent;
+}
+.addoutline{
+  outline: auto;
+  outline-color:#01DAC1;
 }
 .results{
   padding: 0.5rem;
@@ -64,6 +69,7 @@ input{
   .logic-container{
     background-color: #ffffff;
   }
+
 }
 
 .input_fields{

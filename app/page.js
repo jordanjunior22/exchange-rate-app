@@ -85,8 +85,12 @@ export default function Home() {
     const selectedOption = event.target.value;
     setSelectedToCurrency(selectedOption);
   }
-  const toggleTheme = () => {
-    setIsDarkTheme((prevTheme) => !prevTheme);
+  const toggleDarkTheme = () => {
+    setIsDarkTheme(true);
+  };
+
+  const toggleLightTheme = () => {
+    setIsDarkTheme(false);
   };
 
   return (
@@ -101,10 +105,10 @@ export default function Home() {
               </Button>
             </DropdownTrigger>
             <DropdownMenu variant="faded" aria-label="Theme Options">
-              <DropdownItem key="dark" onClick={toggleTheme}>
+              <DropdownItem key="dark" onClick={toggleDarkTheme}>
                 <FiMoon /> Dark Theme
               </DropdownItem>
-              <DropdownItem key="light" onClick={toggleTheme}>
+              <DropdownItem key="light" onClick={toggleLightTheme}>
                 <FiSun /> Light Theme
               </DropdownItem>
             </DropdownMenu>
@@ -142,7 +146,7 @@ export default function Home() {
                   </div>
 
                 </div>
-                  <div className="results"> 
+                  <div className="results addoutline"> 
                     <input placeholder="1000" type="number" min={0} onChange={handleAmountChange} value={amount}/>
                     <p className="small-text">{selectedCurrencyFrom}</p>
 
