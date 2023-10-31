@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button } from "@nextui-org/react";
 import { FiMoon, FiSun } from 'react-icons/fi';
 import {NextUIProvider} from "@nextui-org/react";
-import '../dist/output.css'
 import './globals.css'
 import dynamic from "next/dynamic";
 import axios from "axios";
