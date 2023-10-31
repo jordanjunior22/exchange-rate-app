@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+
+}
+.home{
+  padding: 2rem;
+}
+.button-border{
+  border: 1px solid rgba(169, 169, 169, 0.2);
+  padding: 0.5rem 1.7rem;
+  width: 130px;
+}
+.active-button{
+  background-color: #01DAC1;
+  color: white;
+}
+select{
+  outline: none;
+  color: black;
+}
+input{
+  outline: none;
+
+}
+.results{
+  padding: 0.5rem;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  margin: 2rem 0;
+}
+
+.dark {
+  background-color: #09122F;
+  color: white;
+
+  .canvas{
+    background-color: #2B2E44;
+  }
+  .logic-container{
+    background-color: #323546;
+  }
+
+}
+
+.light {
+  background-color: #EEEEEE;
+  color: black;
+
+  .canvas {
+    background-color: #f9f9f9;
+  }
+  .logic-container{
+    background-color: #ffffff;
+  }
+
+
+}
+.input_fields{
+  font-size: 2rem;
+}
+.developer{
+  padding: 0.5rem;
+  text-align: center;
+}
+.logic-container{
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+.canvas{
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(169, 169, 169, 0.2);
+}
+.pallet{
+  display: flex;
+  margin: 2rem 0;
+}
+.converter{
+    margin: 2rem;
+}
+
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(169, 169, 169, 0.2);
+}
+
+.heading{
+  font-size: 2.25rem;
+  line-height: 4rem;
+  color: #01DAC1;
+}
+.small-text{
+  color:#ABAAAA;
+}
+.from-to{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.currency-box{
+  margin: 1rem 0;
+}
+@media (max-width:768px) {
+  .from-to{
+    flex-direction: column;
+  }
+}
+@media (max-width:425px){
+  .home{
+    padding: 0;
+  }
+  .pallet{
+    flex-direction: column;
+  }
+}
